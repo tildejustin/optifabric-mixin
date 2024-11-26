@@ -1,22 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "optifabric-mixin",
   "version": "${version}",
-  "name": "",
+  "name": "OptiFabric Mixin",
   "description": "",
   "authors": [
     "tildejustin"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/modid",
-    "sources": "https://github.com/tildejustin/modid",
-    "issues": "https://github.com/tildejustin/modid/issues"
+    "homepage": "https://github.com/tildejustin/optifabric-mixin",
+    "sources": "https://github.com/tildejustin/optifabric-mixin",
+    "issues": "https://github.com/tildejustin/optifabric-mixin/issues"
   },
   "license": "MPL-2.0",
   "environment": "*",
   "mixins": [
-    "modid.mixins.json"
   ],
+  "entrypoints": {
+    "preLaunch": [
+      "dev.tildejustin.example.Main"
+    ]
+  },
   "depends": {
     "minecraft": "*",
     "fabricloader": ">=0.15.0"

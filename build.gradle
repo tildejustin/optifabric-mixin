@@ -1,6 +1,6 @@
 plugins {
     alias libs.plugins.fabric.loom
-    alias libs.plugins.legacy.looming
+    alias libs.plugins.ploceus
     id "maven-publish"
 }
 
@@ -22,9 +22,9 @@ loom {
             options.putAll(["mark-corresponding-synthetics": "1", "indent-string": "    "])
         }
     }
-    mixin {
-        useLegacyMixinAp = false
-    }
+    // mixin {
+    //     useLegacyMixinAp = false
+    // }
     // legacyLooming {
     //     intermediaryVersion = 1
     // }
@@ -33,7 +33,8 @@ loom {
 
 dependencies {
     minecraft libs.minecraft
-    mappings legacy.yarn(libs.versions.minecraft.get(), libs.versions.yarn.build.get())
+    mappings ploceus.featherMappings(libs.versions.feather.build.get())
+    nests ploceus.nests(libs.versions.nests.build.get())
     modImplementation libs.fabric.loader
     vineflowerDecompilerClasspath libs.vineflower
 }
