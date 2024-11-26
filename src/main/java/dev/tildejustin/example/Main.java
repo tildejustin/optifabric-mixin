@@ -1,6 +1,5 @@
 package dev.tildejustin.example;
 
-import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import org.spongepowered.asm.mixin.Mixins;
 
