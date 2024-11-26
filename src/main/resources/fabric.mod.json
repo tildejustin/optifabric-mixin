@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "optifabric-mixin",
+  "id": "optifabric-mixin-other",
   "version": "${version}",
   "name": "OptiFabric Mixin",
   "description": "",
